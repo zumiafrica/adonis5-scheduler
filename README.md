@@ -42,7 +42,7 @@ node ace make:task MyTaskName
 ### Starting the scheduler
 Starting an instance of the kue listener is easy with the included ace command.
 
-The provider looks for jobs in the app/Tasks directory of your AdonisJS project and will automatically register a handler for any tasks that it finds.
+The provider looks for jobs in the app/ScheduledTasks directory of your AdonisJS project and will automatically register a handler for any tasks that it finds.
 ```sh
 node ace scheduler:run
 ```

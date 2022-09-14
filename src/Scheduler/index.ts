@@ -26,10 +26,10 @@ export default class Scheduler {
 
 	/**
 	 * Configure tasks absolute path for app
-	 * /<project-dir>/app/Tasks
+	 * /<project-dir>/app/ScheduledTasks
 	 */
 	private _configureTasksPath() {
-		this.tasksPath = path.join(this.appRootPath, 'app', 'Tasks')
+		this.tasksPath = path.join(this.appRootPath, 'app', 'ScheduledTasks')
 		this.tasksPath = path.normalize(this.tasksPath)
 	}
 
@@ -70,7 +70,7 @@ export default class Scheduler {
 	}
 
 	/**
-	 * Register scheduled tasks for every task found in app/Tasks
+	 * Register scheduled tasks for every task found in app/ScheduledTasks
 	 *
 	 * @public
 	 */

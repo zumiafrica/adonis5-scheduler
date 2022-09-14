@@ -8,10 +8,10 @@ export function isObject(value: any): boolean {
 	return value !== null && (type === 'object' || type === 'function')
 }
 export function getSchedulerCompiledClassesPath(app: ApplicationContract) {
-	return join(process.cwd(), '/build/', app.resolveNamespaceDirectory('scheduler') || 'app/Tasks')
+	return join(process.cwd(), '/build/', app.resolveNamespaceDirectory('scheduler') || 'app/ScheduledTasks')
 }
 export function getSchedulerClassesPath(app: ApplicationContract) {
-	return join(process.cwd(), app.resolveNamespaceDirectory('scheduler') || 'app/Tasks')
+	return join(process.cwd(), app.resolveNamespaceDirectory('scheduler') || 'app/ScheduledTasks')
 }
 export async function dirIsExists(path) {
 	try {

@@ -40,7 +40,7 @@ export class BaseTask {
 			.join(':')
 	}
 	protected _getLocker(): LockerInterface {
-		return new Locker(this.name, this.tmpPath)
+		return new Locker(this.name.replace(':','_'), this.tmpPath)
 	}
 
 	public async _run() {
