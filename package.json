@@ -16,6 +16,7 @@
 		"format": "prettier --write .",
 		"commit": "git-cz",
 		"release": "np",
+		"prepare": "npm run build",
 		"version": "npm run build"
 	},
 	"repository": {
